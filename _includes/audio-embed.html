@@ -1,0 +1,38 @@
+{% raw %}
+<!--
+  Usage in a page:
+    {% include audio-embed.html type="bandcamp" src="..." title="Track name" %}
+  or:
+    {% include audio-embed.html type="soundcloud" src="..." title="Track name" %}
+
+  title is optional. To get your Bandcamp embed src: on your album/track
+  page, click "Share/Embed" and copy the iframe src attribute.
+  To get your SoundCloud embed src: click "Share" > "Embed" on the track.
+-->
+{% endraw %}
+<div class="media-card">
+  {% if include.title %}<h3>{{ include.title }}</h3>{% endif %}
+  <div class="audio-embed">
+    {% if include.type == "bandcamp" %}
+      <iframe
+        style="border: 0; width: 100%; height: 120px;"
+        src="{{ include.src }}"
+        seamless
+        loading="lazy"
+        title="{{ include.title | default: 'Bandcamp player' }}">
+      </iframe>
+    {% elsif include.type == "soundcloud" %}
+      <iframe
+        width="100%"
+        height="166"
+        scrolling="no"
+        frameborder="no"
+        loading="lazy"
+        src="{{ include.src }}"
+        title="{{ include.title | default: 'SoundCloud player' }}">
+      </iframe>
+    {% else %}
+      <p><em>Unknown audio embed type: {{ include.type }}</em></p>
+    {% endif %}
+  </div>
+</div>

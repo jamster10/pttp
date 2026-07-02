@@ -1,0 +1,11 @@
+# Each entry is one photo in the gallery grid.
+# Drop image files into assets/img/ and reference them here.
+
+- image: /assets/img/press-1.jpg
+  caption: "Live at Baby's All Right, Brooklyn"
+
+- image: /assets/img/press-2.jpg
+  caption: "Studio session"
+
+- image: /assets/img/band-photo.jpg
+  caption: "Band portrait"

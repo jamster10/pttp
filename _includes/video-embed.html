@@ -1,0 +1,24 @@
+{% raw %}
+<!--
+  Usage in a page:
+    {% include video-embed.html id="dQw4w9WgXcQ" title="Video title" %}
+
+  title is optional. The id is the part after "v=" in a YouTube URL, e.g.
+  https://www.youtube.com/watch?v=dQw4w9WgXcQ  ->  id: dQw4w9WgXcQ
+-->
+{% endraw %}
+<div class="media-card">
+  {% if include.title %}<h3>{{ include.title }}</h3>{% endif %}
+  <div class="video-embed">
+    <iframe
+      width="100%"
+      height="360"
+      src="https://www.youtube.com/embed/{{ include.id }}"
+      title="{{ include.title | default: 'YouTube video player' }}"
+      frameborder="0"
+      loading="lazy"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>

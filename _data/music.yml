@@ -1,0 +1,11 @@
+# Each entry renders as one embedded player on the Music page.
+# embed_type is "bandcamp" or "soundcloud".
+# See _includes/audio-embed.html for how to get the embed_src value.
+
+- title: "Greenhouse (2026)"
+  embed_type: bandcamp
+  embed_src: "https://bandcamp.com/EmbeddedPlayer/album=YOUR_ALBUM_ID/size=large/bgcol=ffffff/linkcol=333333/artwork=small/transparent=true/"
+
+- title: "Watering Can — Single"
+  embed_type: soundcloud
+  embed_src: "https://w.soundcloud.com/player/?url=YOUR_TRACK_URL"

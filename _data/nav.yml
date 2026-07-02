@@ -1,0 +1,34 @@
+# Powers both the header navigation and the homepage link cards.
+# Add, remove, or reorder pages here — no HTML editing needed.
+# icon must match one of the symbol ids in _includes/icon-sprite.html:
+# leaf, music, film, camera, calendar, mail
+
+- title: Bio
+  url: /bio.html
+  icon: leaf
+  blurb: Who we are, where we started, where we're headed.
+
+- title: Music
+  url: /music.html
+  icon: music
+  blurb: Stream our releases.
+
+- title: Videos
+  url: /videos.html
+  icon: film
+  blurb: Live sets, music videos, behind the scenes.
+
+- title: Pictures
+  url: /pictures.html
+  icon: camera
+  blurb: Photos from shows and sessions.
+
+- title: Events
+  url: /events.html
+  icon: calendar
+  blurb: Upcoming shows near you.
+
+- title: Contact
+  url: /contact.html
+  icon: mail
+  blurb: Booking and press inquiries.

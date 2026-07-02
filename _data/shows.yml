@@ -1,0 +1,18 @@
+# Add or remove shows by editing this list.
+# Delete a show once it's passed, or leave it — your call.
+# Date format: YYYY-MM-DD
+
+- date: 2026-04-26
+  city: Paige, TX
+  venue: KP's Yard
+  ticket_url: ""  # leave blank if tickets aren't on sale yet
+
+- date: 2026-07-12
+  city: Bastrop, TX
+  venue: 602 Brewing
+  ticket_url: https://example.com/tickets/602
+
+- date: 2026-09-20
+  city: Seattle, WA
+  venue: The Watering Can
+  ticket_url: ""  

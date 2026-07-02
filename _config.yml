@@ -1,0 +1,29 @@
+title: Playing to the Plants
+tagline: Electronic Press Kit
+description: >-
+  A three-piece rock band that brings dynamic texture to melodic
+  original songs. Additionally, they offer a wide catalogue of crowd pleasing covers, ranging from Michael
+  Jackson to System of a Down.
+
+# Contact info shown on the press page
+booking_email: booking@pttpmusic.com
+press_email: press@pttpmusic.com
+
+# Third-party embed IDs — fill these in, no code changes needed
+
+# Jekyll build settings — leave as-is
+# GitHub Pages needs to know your repo to build metadata locally
+# (bundle exec jekyll serve/build). Set to "your-github-username/repo-name".
+# GitHub's own servers infer this automatically, but local builds need it
+# spelled out, or you'll hit "No repo name found" from jekyll-seo-tag.
+repository: "your-github-username/your-repo-name"
+
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# If you're publishing at https://<user>.github.io/<repo>/ instead of a
+# custom domain, uncomment and set this to "/<repo>"
+# baseurl: ""
+url: "" # set to your custom domain, e.g. "https://playingtotheplants.com", once you have one

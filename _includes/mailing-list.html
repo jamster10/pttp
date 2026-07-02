@@ -1,0 +1,21 @@
+<!--
+  Buttondown embed form. Set buttondown_username in _config.yml once
+  and this works everywhere it's included — no HTML editing needed.
+
+  If you'd rather use Mailchimp/ConvertKit instead, swap the <form>
+  below for the embed snippet they give you in their dashboard.
+-->
+<div class="mailing-list">
+  <h3>Join the mailing list</h3>
+  <p>Get show announcements and new music straight to your inbox.</p>
+  <form
+    action="https://buttondown.email/api/emails/embed-subscribe/{{ site.buttondown_username }}"
+    method="post"
+    target="popupwindow"
+    onsubmit="window.open('https://buttondown.email/{{ site.buttondown_username }}', 'popupwindow')"
+    class="embeddable-buttondown-form">
+    <label for="bd-email" class="sr-only">Email</label>
+    <input type="email" name="email" id="bd-email" placeholder="you@example.com" required>
+    <button type="submit" class="btn btn-bloom">Subscribe</button>
+  </form>
+</div>

@@ -1,0 +1,12 @@
+# Each entry renders as one embedded YouTube player on the Videos page.
+# youtube_id is the part after "v=" in a YouTube URL.
+
+- title: "Malicious Decor"
+  youtube_id: "sd8Le33-T5M"
+
+- title: "godmother"
+  youtube_id: "x9aHDkXJ_XQ"
+
+- title: "Good"
+  youtube_id: "Ex4-q1_dn8c"
+
