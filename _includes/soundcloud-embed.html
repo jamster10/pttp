@@ -1,0 +1,49 @@
+{% raw %}
+<!--
+  Usage:
+    {% include soundcloud-embed.html
+       src="https://w.soundcloud.com/player/?url=..."
+       height="500"
+       title="Playlist name"
+       credit_label="Your Artist Name"
+       credit_url="https://soundcloud.com/your-profile"
+       sub_label="Playlist name"
+       sub_url="https://soundcloud.com/your-profile/sets/your-playlist" %}
+
+  sub_label/sub_url are optional — omit them if you're embedding a single
+  track rather than a playlist/set.
+
+  To build the src URL: on SoundCloud, click Share > Embed on your
+  playlist, copy the iframe's src attribute, then tweak these query
+  params to taste:
+    visual=false        shows the compact tracklist player (recommended —
+                         visual=true shows one big artwork image instead
+                         and hides the track list)
+    color=%237CB37F      player accent color, URL-encoded hex (this is
+                         the site's --leaf green)
+    hide_related=true    hides SoundCloud's "related tracks" suggestions
+    show_comments=false  hides waveform comments (cleaner for an EPK)
+-->
+{% endraw %}
+<div class="media-card soundcloud-embed">
+  {% if include.title %}<h3>{{ include.title }}</h3>{% endif %}
+  <div class="audio-embed">
+    <iframe
+      width="100%"
+      height="{{ include.height | default: 500 }}"
+      scrolling="no"
+      frameborder="no"
+      allow="autoplay; encrypted-media"
+      loading="lazy"
+      src="{{ include.src }}"
+      title="{{ include.title | default: 'SoundCloud player' }}">
+    </iframe>
+  </div>
+  <div class="soundcloud-credit">
+    <a href="{{ include.credit_url }}" target="_blank" rel="noopener">{{ include.credit_label }}</a>
+    {% if include.sub_url %}
+      &nbsp;·&nbsp;
+      <a href="{{ include.sub_url }}" target="_blank" rel="noopener">{{ include.sub_label }}</a>
+    {% endif %}
+  </div>
+</div>

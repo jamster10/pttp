@@ -1,11 +1,7 @@
 # Shown as icons/buttons in the header and footer.
 # Leave the url blank ("") to hide a link you don't use.
 
-- name: Instagram
-  url: "https://instagram.com/yourband"
-- name: Spotify
-  url: "https://open.spotify.com/artist/yourid"
-- name: Bandcamp
-  url: "https://yourband.bandcamp.com"
+- name: Soundcloud
+  url: "https://soundcloud.com/pttp-playing-to-the-plants"
 - name: YouTube
   url: "https://youtube.com/@PlayingtothePlants"

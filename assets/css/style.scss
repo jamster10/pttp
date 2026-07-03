@@ -416,6 +416,26 @@ main { overflow: hidden; }
 .media-card h3 { margin-bottom: 0.5em; }
 .audio-embed, .video-embed { border-radius: var(--radius-sm); overflow: hidden; }
 
+.soundcloud-embed .audio-embed {
+  border: 2px solid var(--leaf);
+  border-radius: var(--radius);
+  padding: 5px;
+  background: var(--bg-dim);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.35);
+
+  iframe { border-radius: calc(var(--radius) - 5px); display: block; }
+}
+
+.soundcloud-credit {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-soft);
+  font-family: var(--font-body);
+
+  a { color: var(--text-soft); text-decoration: none; }
+  a:hover { color: var(--leaf-bright); }
+}
+
 // ------------------------------------------------------------
 // Gallery
 // ------------------------------------------------------------
@@ -477,6 +497,54 @@ main { overflow: hidden; }
   }
   input[type="email"]::placeholder { color: var(--text-soft); }
   input[type="email"]:focus { border-color: var(--bloom); outline: none; }
+}
+
+// ------------------------------------------------------------
+// Reviews / press quotes
+// ------------------------------------------------------------
+.review-grid {
+  display: grid;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+.review-card {
+  position: relative;
+  padding: 1.75rem 1.75rem 1.5rem;
+  background-color: var(--bg-dim);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+.review-card::before {
+  content: '“';
+  position: absolute;
+  top: 0.1rem;
+  left: 1.1rem;
+  font-family: var(--font-display);
+  font-size: 3rem;
+  line-height: 1;
+  color: var(--bloom);
+  opacity: 0.55;
+}
+.review-quote {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.45;
+  color: var(--text);
+  margin: 0 0 0.75rem;
+  padding-left: 1.5rem;
+}
+.review-source {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--pollen);
+  margin: 0;
+  padding-left: 1.5rem;
+
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: var(--bloom-bright); }
 }
 
 // ------------------------------------------------------------

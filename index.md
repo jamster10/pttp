@@ -18,15 +18,8 @@ title: Home
   </div>
   {% include hero-pttp-plant.html %}
 </div>
-<!-- <div class="hero-photo section-narrow">
-  <div class="photo-frame">
-    <img src="{{ '/assets/img/stylized-band.jpg' | relative_url }}" alt="Playing to the Plants band photo">
-    <span class="frame-badge">
-      <svg width="20" height="20"><use href="#icon-flower"></use></svg>
-    </span>
-  </div>
-</div> -->
 
+m,.
 {% include leaf-divider.html %}
 
 <div class="section">

@@ -1,0 +1,19 @@
+{% raw %}
+<!--
+  Usage:
+    {% include review-card.html quote="..." source="..." url="https://..." %}
+
+  url is optional — omit it (or leave blank) if the quote isn't linked
+  to a published article.
+-->
+{% endraw %}
+<div class="review-card">
+  <p class="review-quote">{{ include.quote }}</p>
+  <p class="review-source">
+    {% if include.url and include.url != "" %}
+      <a href="{{ include.url }}" target="_blank" rel="noopener">{{ include.source }}</a>
+    {% else %}
+      {{ include.source }}
+    {% endif %}
+  </p>
+</div>
