@@ -8,11 +8,11 @@ title: Home
     <span class="hero-eyebrow">Bastrop, TX</span>
     <h1>Playing to<br>the Plants</h1>
     <p class="hero-pitch">
-      A three-piece rock band that brings dynamic texture to melodiccoriginal songs. Additionally, they offer a wide catalogue of crowd pleasing covers, ranging from Michael Jackson to System of a Down.
+      A three-piece rock band that brings dynamic texture to melodic original songs. Additionally, they offer a wide catalogue of crowd pleasing covers, ranging from Michael Jackson to System of a Down.
     </p>
     <div class="hero-actions">
       <a class="btn btn-primary" href="{{ '/music.html' | relative_url }}">Listen to the music</a>
-      <a class="btn btn-outline" href="{{ '/bio.html' | relative_url }}">EPK & Bio</a>
+      <a class="btn btn-outline" href="{{ '/epk.html' | relative_url }}">EPK</a>
       <a class="btn btn-outline" href="{{ '/events.html' | relative_url }}">See upcoming shows</a>
     </div>
   </div>

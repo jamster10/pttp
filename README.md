@@ -22,14 +22,14 @@ CI to maintain.
    - Photos in `_data/gallery.yml` (drop image files into `assets/img/`)
    - Tour dates in `_data/shows.yml`
    - Nav labels/blurbs in `_data/nav.yml` if you ever add/remove a page
-   - Bio text in `bio.md`
+   - EPK text in `epk.md`
    - Band photo at `assets/img/band-photo.jpg` (referenced in `index.md`)
 
 ## Ongoing editing (for the band)
 
 Everything you'll regularly touch is either:
 
-- **Markdown** (`bio.md`, `index.md`, etc.) — page copy.
+- **Markdown** (`epk.md`, `index.md`, etc.) — page copy.
 - **YAML data** (`_data/*.yml`) — tour dates, releases, videos, photos,
   nav links. Add or remove list items; no HTML editing needed.
 
@@ -67,7 +67,7 @@ _layouts/default.html  Page shell — header/nav/footer
 assets/css/style.scss  All site styling — dark botanical theme + floral buttons
 assets/img/            Photos, band logo, favicon source
 index.md               Home — hero pitch, photo, nav grid, mailing list
-bio.md, events.md, music.md, videos.md, pictures.md, contact.md
+epk.md, events.md, music.md, videos.md, pictures.md, contact.md
                         The six main site pages
 ```
 

@@ -3,8 +3,8 @@
 # icon must match one of the symbol ids in _includes/icon-sprite.html:
 # leaf, music, film, camera, calendar, mail
 
-- title: Bio
-  url: /bio.html
+- title: EPK
+  url: /epk.html
   icon: leaf
   blurb: Who we are, where we started, where we're headed.
 
