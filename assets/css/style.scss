@@ -259,9 +259,10 @@ main { overflow: hidden; }
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 3rem 1.25rem 2rem;
-  display: grid;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 .hero-eyebrow {
   font-family: var(--font-mono);
@@ -272,21 +273,60 @@ main { overflow: hidden; }
   margin-bottom: 0.75em;
   display: block;
 }
+.hero-heading {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: "left text right";
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.hero-heading .pttp-guy { grid-area: left; }
+.hero-heading .hero-pttp-plant { grid-area: right; }
+.hero-heading-text {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  gap: 0.75rem;
+
+  h1 {
+    margin: 0;
+    font-size: clamp(1.6rem, 6vw, 3.4rem);
+  }
+}
+
+// Mobile: SVGs move to top corners, header + description take the
+// full width beneath them. Desktop (above) is untouched.
+@media (max-width: 639px) {
+  .hero-heading {
+    grid-template-areas:
+      "left . right"
+      "text text text";
+    row-gap: 1.25rem;
+  }
+}
 .hero-pitch {
   font-size: 1.15rem;
   max-width: 44ch;
+  margin: 0;
 }
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.75rem;
   margin-top: 1.5rem;
 }
-.hero-pttp-plant {
-  width: 100%;
-  max-width: 260px;
-  height: auto;
-  justify-self: center;
+.hero-heading .hero-pttp-plant,
+.hero-heading .pttp-guy {
+  width: clamp(56px, 20vw, 170px);
+  max-width: clamp(56px, 20vw, 170px);
+  flex-shrink: 0;
+}
+.hero-pttp-plant,
+.pttp-guy {
   animation: hero-pttp-plant-in 0.8s ease-out forwards;
   opacity: 0;
 }
@@ -295,12 +335,7 @@ main { overflow: hidden; }
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .hero-pttp-plant { animation: none; opacity: 1; }
-}
-
-@media (min-width: 800px) {
-  .hero { grid-template-columns: 1.3fr 0.7fr; padding-top: 4.5rem; }
-  .hero-pttp-plant { max-width: 320px; }
+  .hero-pttp-plant, .pttp-guy { animation: none; opacity: 1; }
 }
 
 // ------------------------------------------------------------

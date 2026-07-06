@@ -4,22 +4,26 @@ title: Home
 ---
 
 <div class="hero">
-  <div>
-    <span class="hero-eyebrow">Bastrop, TX</span>
-    <h1>Playing to<br>the Plants</h1>
-    <p class="hero-pitch">
-      A three-piece rock band that brings dynamic texture to melodic original songs. Additionally, they offer a wide catalogue of crowd pleasing covers, ranging from Michael Jackson to System of a Down.
-    </p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="{{ '/music.html' | relative_url }}">Listen to the music</a>
-      <a class="btn btn-outline" href="{{ '/epk.html' | relative_url }}">EPK</a>
-      <a class="btn btn-outline" href="{{ '/events.html' | relative_url }}">See upcoming shows</a>
+  <span class="hero-eyebrow">Bastrop, TX</span>
+
+  <div class="hero-heading">
+    {% include pttp-guy.html %}
+    <div class="hero-heading-text">
+      <h1>Playing to the Plants</h1>
+      <p class="hero-pitch">
+        A three-piece rock band that brings dynamic texture to melodic original songs. Additionally, they offer a wide catalogue of crowd pleasing covers, ranging from Michael Jackson to System of a Down.
+      </p>
     </div>
+    {% include hero-pttp-plant.html %}
   </div>
-  {% include hero-pttp-plant.html %}
+
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="{{ '/music.html' | relative_url }}">Listen to the music</a>
+    <a class="btn btn-outline" href="{{ '/epk.html' | relative_url }}">EPK</a>
+    <a class="btn btn-outline" href="{{ '/events.html' | relative_url }}">See upcoming shows</a>
+  </div>
 </div>
 
-m,.
 {% include leaf-divider.html %}
 
 <div class="section">

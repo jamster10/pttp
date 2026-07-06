@@ -6,7 +6,6 @@ title: Pictures
 <div class="page-header">
   <h1>Pictures</h1>
   {% include leaf-divider.html %}
-  <p>Add or remove photos in <code>_data/gallery.yml</code> — drop the image file into <code>assets/img/</code> first, then reference it there.</p>
 </div>
 
 <div class="section">
