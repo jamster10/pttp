@@ -627,3 +627,61 @@ main { overflow: hidden; }
   a:hover { color: var(--bloom-bright); }
 }
 .footer-note { margin-top: 0.5rem; font-family: var(--font-mono); font-size: 0.75rem; }
+
+/* EmailOctopus */
+
+[data-form="e23135c4-7958-11f1-8839-1f7cb3cc0798"].inline-container {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 2rem auto !important;
+  max-width: 32rem;
+}
+
+[data-form="e23135c4-7958-11f1-8839-1f7cb3cc0798"] .eo-form-wrapper {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+[data-form="e23135c4-7958-11f1-8839-1f7cb3cc0798"] h1,
+[data-form="e23135c4-7958-11f1-8839-1f7cb3cc0798"] h2,
+[data-form="e23135c4-7958-11f1-8839-1f7cb3cc0798"] p,
+[data-form="e23135c4-7958-11f1-8839-1f7cb3cc0798"] label {
+  color: inherit !important;
+}
+
+[data-form="e23135c4-7958-11f1-8839-1f7cb3cc0798"] input[type="email"] {
+  width: 100%;
+  background: transparent !important;
+  border: 2px solid currentColor !important;
+  border-radius: 999px !important;
+  padding: 0.8rem 1.2rem !important;
+  color: inherit !important;
+  font: inherit !important;
+}
+
+[data-form="e23135c4-7958-11f1-8839-1f7cb3cc0798"] input::placeholder {
+  color: rgba(255,255,255,.6);
+}
+
+[data-form="e23135c4-7958-11f1-8839-1f7cb3cc0798"] button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  border: 2px solid currentColor;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  transition: .2s;
+}
+
+[data-form="e23135c4-7958-11f1-8839-1f7cb3cc0798"] button:hover {
+  background: currentColor;
+  color: #000;
+}
+
+.emailoctopus-form-row{
+  margin-right: 12px !important;
+}
